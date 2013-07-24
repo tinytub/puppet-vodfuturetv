@@ -11,7 +11,7 @@ class vodfuturetv::configs {
 		owner => "root",
 		group => "root",
 		mode => "644",
-		source => "puppet://$puppetserver/modules/vodfuturetv/sysctl",
+		source => "puppet://$puppetserver/modules/vodfuturetv/sysctl.conf",
 		notify => Exec["sysctl load"],
 	}
 	exec {"sysctl load":
